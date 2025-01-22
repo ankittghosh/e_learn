@@ -17,7 +17,7 @@ export default function Login() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">
-            Login
+            Login22
           </CardTitle>
           <CardDescription className="text-center">
             Welcome back! Please enter your credentials.
