@@ -45,48 +45,58 @@ function SidebarContent({ handleLogout }) {
         <NavLink
           to="/app/dashboard"
           className={({ isActive }) =>
-            isActive ? "bg-primary text-primary-foreground rounded-md h-9 py-2" : ""
+            isActive
+              ? "bg-primary text-primary-foreground rounded-md h-9 py-2"
+              : ""
           }
         >
-          <Button
-            variant="ghost"
-            className="w-full justify-start hover:bg-muted"
-          >
-            <Home className="mr-2 h-4 w-4" />
-            Dashboard
-          </Button>
+          {({ isActive }) => (
+            <Button
+              variant={isActive ? "primary" : "ghost"} // Set variant based on isActive
+              className="w-full justify-start"
+            >
+              <Home className="mr-2 h-4 w-4" />
+              Dashboard
+            </Button>
+          )}
         </NavLink>
 
         <NavLink
           to="/app/courses"
           className={({ isActive }) =>
             isActive
-              ? "bg-primary text-primary-foreground rounded-md w-full justify-start h-9 py-2"
+              ? "bg-primary text-primary-foreground rounded-md h-9 py-2"
               : ""
           }
         >
-          <Button
-            variant="ghost"
-            className="w-full justify-start hover:bg-muted"
-          >
-            <BookOpen className="mr-2 h-4 w-4" />
-            Courses
-          </Button>
+          {({ isActive }) => (
+            <Button
+              variant={isActive ? "primary" : "ghost"} // Set variant based on isActive
+              className="w-full justify-start"
+            >
+              <BookOpen className="mr-2 h-4 w-4" />
+              Courses
+            </Button>
+          )}
         </NavLink>
 
         <NavLink
           to="/app/profile"
           className={({ isActive }) =>
-            isActive ? "bg-primary text-primary-foreground rounded-md h-9 py-2" : ""
+            isActive
+              ? "bg-primary text-primary-foreground rounded-md h-9 py-2"
+              : ""
           }
         >
-          <Button
-            variant="ghost"
-            className="w-full justify-start hover:bg-muted"
-          >
-            <User className="mr-2 h-4 w-4" />
-            Profile
-          </Button>
+          {({ isActive }) => (
+            <Button
+              variant={isActive ? "primary" : "ghost"} // Set variant based on isActive
+              className="w-full justify-start"
+            >
+              <User className="mr-2 h-4 w-4" />
+              Profile
+            </Button>
+          )}
         </NavLink>
       </nav>
 
