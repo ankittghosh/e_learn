@@ -38,7 +38,14 @@ function SidebarContent({ handleLogout }) {
   return (
     <div className="flex flex-col h-full">
       {/* Heading (Use theme color) */}
-      <h1 className="text-2xl font-bold mb-8 text-primary">E-Learner</h1>
+      <div className="flex items-center mb-8">
+      {/* Default Avatar with Initials */}
+      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
+        <span className="text-lg font-bold text-primary-foreground">A</span> {/* Replace "A" with the initial */}
+      </div>
+      {/* Heading */}
+      <h1 className="text-2xl font-bold text-primary">Hello! Admin</h1>
+    </div>
 
       {/* Navigation Links (Add space between items) */}
       <nav className="flex-1 space-y-1">
