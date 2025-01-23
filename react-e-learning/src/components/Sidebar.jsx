@@ -45,7 +45,7 @@ function SidebarContent({ handleLogout }) {
         <NavLink
           to="/app/dashboard"
           className={({ isActive }) =>
-            isActive ? "bg-primary text-primary-foreground rounded-md" : ""
+            isActive ? "bg-primary text-primary-foreground rounded-md h-9 py-2" : ""
           }
         >
           <Button
@@ -60,7 +60,9 @@ function SidebarContent({ handleLogout }) {
         <NavLink
           to="/app/courses"
           className={({ isActive }) =>
-            isActive ? "bg-primary text-primary-foreground rounded-md" : ""
+            isActive
+              ? "bg-primary text-primary-foreground rounded-md w-full justify-start h-9 py-2"
+              : ""
           }
         >
           <Button
@@ -75,7 +77,7 @@ function SidebarContent({ handleLogout }) {
         <NavLink
           to="/app/profile"
           className={({ isActive }) =>
-            isActive ? "bg-primary text-primary-foreground rounded-md" : ""
+            isActive ? "bg-primary text-primary-foreground rounded-md h-9 py-2" : ""
           }
         >
           <Button
